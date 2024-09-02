@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: "Pixelify Sans";
+    background-color: #1b1b1b;
+}
+
+.topbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-text {
+    font-size: 30px;
+    font-family: "Pixelify Sans";
+}
+
+.right-buttons button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 15px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.right-buttons button:hover {
+    background-color: #777;
+}
+
+.pfp {
+    width: 50px;
+    height: 50px;
+}
+
+.post {
+    width: 600px;
+    height: 300px;
+    background-color: #0e0e0e;
+    color: white;
+    align-items: center;
+    margin-left: 10px;
+}
+.post button {
+    font-family: "Pixelify Sans";
+    background-color: #0f0f0f;
+    border-color: white;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: larger;
+    margin-left: 210px;
+}
+.post button:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+.titletxt {
+    font-size: 50px;
+}
+.snippettxt {
+    font-size: 25px;
+}
+
+.contentchild {
+    display: inline-block;
+}
+
+.whoami {
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+    width: 500px;
+    height: 700px;
+    background-color: #0e0e0e;
+}
+.whoami h1 {
+    color: white;
+}
+.whoami p {
+    color: white;
+    font-size: 20px;
+}
+.whoami .bigscreenie {
+    width: 320px;
+    height: 180px;
+    transform: rotate(-15deg);
+}
+.whoami .bigscreenie2 {
+    width: 320px;
+    height: 180px;
+    transform: rotate(15deg);
+    margin-left: 150px;
+}
+
+.inlineStuff {
+    display: inline-block;
+}
+.daPost h1 {
+    color: white;
+}
+.daPost h3 {
+    color: rgb(104, 104, 104);
+}
+.daPost h2 {
+    color: white;
+}
+.daPost h4 {
+    color: white;
+}
+.daPost p {
+    color: white;
+}
+.daPost text {
+    color: white;
+}
+.daPost .center {
+    display: flex;
+    flex-direction: column;    /* Stack children vertically */
+    align-items: center;       /* Centers content horizontally */
+    /* height: 100vh;             /* Makes container fill the full viewport height */
+    text-align: center;        /* Optional: centers text inside the child elements */
+    padding-top: 20px;
+    gap: 10px;
+}
+.daPost img {
+    width: 640px;
+    height: 360px;
+}

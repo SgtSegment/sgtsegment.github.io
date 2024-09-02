@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sgt's Epic Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./pfp.png"></link>
+</head>
+<body>
+    <script>
+        function discordsocialLink() {
+            window.location.replace("https://discord.com/");
+        }
+        function youtubesocialLink() {
+            window.location.replace("https://youtube.com/@SgtSegment");
+        }
+        function ghsocialLink() {
+            window.location.replace("https://github.com/SgtSegment");
+        }
+    </script>
+    <div class="topbar">
+        <div class="left-text">
+            <img src="pfp.png" class="pfp"></img>
+            Sgt
+        </div>
+        <div class="right-buttons">
+            <input type="image" src="discord.png" onmouseover="this.src = 'discord-hover.png'" onmouseout="this.src = 'discord.png'" onclick="discordsocialLink()"></input>
+            <input type="image" src="youtube.png" onmouseover="this.src = 'youtube-hover.png'" onmouseout="this.src = 'youtube.png'" onclick="youtubesocialLink()"></input>
+            <input type="image" src="../github.png" onmouseover="this.src = '../github-hover.png'" onmouseout="this.src = '../github.png'" onclick="ghsocialLink()"></input>
+        </div>
+    </div>
+    <div>
+        <div class="contentchild" id="elPosts">
+            <!--
+            <div class="post" id="test">
+                <p id="title" class="titletxt">Post title</h1> <p id="snippet" class="snippettxt">Post snippet</p>
+                <br><br><br>
+                <button onclick="window.location.href = './posts/post.html?post=test'">Full Post >>></button>
+            </div>
+            -->     
+        </div>
+        <a href="./posts/archive/">Post Archive</a>
+        <div class="whoami contentchild">
+            <h1>Who am I?</h1>
+            <p>Hello! My name is Jordan, and I am an indie game dev / modder. This is my "blog" (but will basically just be patch notes for my games)</p>
+            <p>I like screwing with games alot, whether it be bugs & glitches or modding. My social links are on the top bar.</p>
+            <img src="ss2.png" class="bigscreenie"></img>
+            <img src="ss1.png" class="bigscreenie2"></img>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sgt's Epic Blog</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../pfp.png"></link>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+</head>
+
+<body>
+    <script>
+        function discordsocialLink() {
+            window.location.replace("https://discord.com/");
+        }
+        function youtubesocialLink() {
+            window.location.replace("https://youtube.com/@SgtSegment");
+        }
+        function ghsocialLink() {
+            window.location.replace("https://github.com/SgtSegment");
+        }
+    </script>
+    <div class="topbar">
+        <div class="left-text">
+            <img src="../pfp.png" class="pfp"></img>
+            Sgt
+        </div>
+        <div class="right-buttons">
+            <input type="image" src="../discord.png" onmouseover="this.src = '../discord-hover.png'" onmouseout="this.src = '../discord.png'" onclick="discordsocialLink()"></input>
+            <input type="image" src="../youtube.png" onmouseover="this.src = '../youtube-hover.png'" onmouseout="this.src = '../youtube.png'" onclick="youtubesocialLink()"></input>
+            <input type="image" src="../github.png" onmouseover="this.src = '../github-hover.png'" onmouseout="this.src = '../github.png'" onclick="ghsocialLink()"></input>
+        </div>
+    </div>
+    <div class="daPost" id="postDiv">
+        <div class="contentchild center">
+            <h1 id="postTitle">Post Title</h1>
+            <br>
+            <img src="" alt="Thumbnail" id="postThumb">
+            <br>
+            <h4 id="postRead">A 1 minute read</h4>
+        </div>
+        <!-- <md-block src="./test.md" id="postText"></md-block> -->
+    </div>
+    <script src="index.js"></script>
+</body>
