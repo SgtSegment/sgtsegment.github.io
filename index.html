@@ -1,0 +1,23 @@
+<title>el embed bypasse</title>
+<h1>Embed Maker</h1>
+<h3>Insert YT Link Below:</h3>
+<br>
+<input type="url" id="eaea">
+<button id="enterbtn">Enter</button>
+<br><br>
+<a id="outputlnk">output link here</a>
+<br><br><br>
+<iframe id="ifram" src="https://youtube.com/embed/undefined" width="640" height="360" allowfullscreen></iframe>
+
+
+<script>
+    document.getElementById("enterbtn").onclick = function(){
+        // document.getElementById("outputlnk").innerHTML = document.getElementById("eaea").value
+        var value = document.getElementById("eaea").value
+        if (value.split("?v=") != []) {
+            document.getElementById("outputlnk").href = "https://youtube.com/embed/"+value.split("?v=")[1]
+            document.getElementById("outputlnk").innerHTML = "https://youtube.com/embed/"+value.split("?v=")[1]
+            document.getElementById("ifram").src = "https://youtube.com/embed/"+value.split("?v=")[1]
+        }
+    }
+</script>
